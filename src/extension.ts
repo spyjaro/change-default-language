@@ -1,10 +1,10 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-  // Получаем текущий язык интерфейса
+  // Get the current interface language
   const currentLanguage = vscode.env.language;
 
-  // Если язык не является английским, то меняем его
+  // If the language is not English, change it
   if (currentLanguage !== 'en') {
     vscode.workspace
       .getConfiguration('locale')
